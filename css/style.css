@@ -43,7 +43,6 @@ h2{
 }
 
 h3{
-    text-shadow: #008000;
     -webkit-text-stroke: 1px black;
 
 }
@@ -76,6 +75,7 @@ h3{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    /*Cambiar imagen (?) */
 }
 
 #imagen-efecto h2{
@@ -154,7 +154,7 @@ input[type=text], input[type=password] {
     background-color: #212529;
     color: white;
     text-align: center;
-    font-size:36px"
+    font-size:36px;
 }
 
 #iconos{
@@ -170,13 +170,6 @@ input[type=text], input[type=password] {
 
 @media only screen and (max-device-width: 768px) {
 
-    .parallax-chico{
-        height: 450px;
-        background-image: url("/img/mecanico2.jpg");
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: center;
-    }
 
     .caja-form {
         margin: 25px 0 0 0;
@@ -194,7 +187,7 @@ input[type=text], input[type=password] {
 }
 
 
-/* Carrusel*/
+/* Carrusel
 .content-all{
     width: 210px;
     margin: auto;
@@ -260,7 +253,7 @@ input[type=text], input[type=password] {
         transform: rotateY(360deg);
     }
 }
-
+*/
 
 /* 
 @media (max-width: 768px) {
