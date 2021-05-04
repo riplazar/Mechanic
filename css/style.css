@@ -211,7 +211,7 @@ input[type=text], input[type=password] {
 }
 
 #iconos {
-    padding-top: 10PX;
+    padding-bottom: 10px;
 }
 
 .carousel-inner img {
@@ -231,6 +231,125 @@ input[type=text], input[type=password] {
         height: 300px;
     }
 }
+
+
+
+/*cards*/
+
+.cards {
+    display: flex;
+    padding: 32px;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #434343;
+
+    font-size: 16px;
+}
+
+.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+.cards section.card:first-child {
+    margin-left: 0;
+}
+
+.cards section.card .icon {
+    width: 100px;
+    height: 100px;
+}
+
+.cards section.card img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+    font-weight: 400;
+    -webkit-text-stroke: 0;
+}
+
+.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background-color: #008000;
+}
+
+
+
+.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #FFC1D5;
+}
+
+@media screen and (max-width: 720px) {
+    .cards {
+        flex-direction: column;
+        padding-top: 40%;
+
+    }
+
+    .imagen-efecto {
+        height: 120vh;
+        background-image: url(../img/mecanico2.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    .cards section.card button {
+        font-size: 70%;
+    }
+
+}
+
+
+
+
+
 
 /* Carrusel
 .content-all{
