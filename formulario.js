@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     $("#formulario_contacto").validate({
 
         rules: {
@@ -48,7 +48,7 @@ $(document).ready(function () {
                 minlength: "Ingresa 9 digitos",
                 maxlength: "Ingresa 9 digitos",
                 number: "Ingresa un numero valido"
-            
+
             },
 
             email: {
@@ -69,7 +69,7 @@ $(document).ready(function () {
 });
 
 
-        
+
 
 
 $("#btn_enviar").click(function () {
@@ -81,3 +81,65 @@ $("#btn_enviar").click(function () {
     let mensaje = $("#mensaje").val()
     console.log(nombre)
 });
+
+
+
+
+
+$(document).ready(function () {
+
+    traer();
+    traer2();
+    traer3();
+
+});
+
+//Usuario 1 
+var contenido = document.querySelector('#contenido')
+function traer() {
+    fetch('https://randomuser.me/api/')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.results['0'])
+            contenido.innerHTML = `
+                <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle"> 
+                <p>Nombre: ${data.results['0'].name.last}</p>
+                `
+        })
+}
+
+
+//Usuario 2 
+var contenido2 = document.querySelector('#contenido2')
+function traer2() {
+    fetch('https://randomuser.me/api/')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.results['0'])
+            contenido2.innerHTML = `
+                <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle"> 
+                <p>Nombre: ${data.results['0'].name.last}</p>
+                `
+        })
+}
+
+
+
+//Usuario 3
+var contenido3 = document.querySelector('#contenido3')
+function traer3() {
+    fetch('https://randomuser.me/api/')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.results['0'])
+            contenido3.innerHTML = `
+                <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle"> 
+                <p>Nombre: ${data.results['0'].name.last}</p>
+                `
+        })
+}
+
+
+
+
+
