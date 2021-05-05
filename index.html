@@ -45,7 +45,7 @@
             <a class="nav-link" href="#nosotros">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#footer">Contacto</a>
+            <a class="nav-link" href="#conctact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -201,7 +201,7 @@
 
   <!-- formulario-->
   <div class="container">
-    <h1 class="logo">Formulario <span>Contacto</span></h1>
+    <h1 id="conctact" class="logo">Formulario <span>Contacto</span></h1>
 
     <div class="contact-wrapper animated bounceInUp">
       <div class="contact-form">
@@ -209,23 +209,23 @@
 
         <form action="" id="formulario_contacto">
           <p>
-            <label>Nombre</label>
-            <input type="nombre" name="nombre" id="nombre" />
+            <label for="nombre" >Nombre</label>
+            <input type="text" name="nombre" id="nombre" />
           </p>
           <p>
-            <label>Email</label>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" />
+          </p>
+          <p>
+            <label for="celular">Celular</label>
+            <input type="text" name="celular" id="celular" />
+          </p>
+          <p>
+            <label for="email">Correo</label>
             <input type="email" name="email" id="email" />
           </p>
-          <p>
-            <label>Celular</label>
-            <input type="celular" name="celular" id="celular" />
-          </p>
-          <p>
-            <label>Dirección</label>
-            <input type="direccion" name="direccion" id="direccion" />
-          </p>
           <p class="block">
-            <label>Mensaje</label>
+            <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="3"></textarea>
           </p>
           <p class="block">
@@ -269,13 +269,12 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="Formulario/formulario_jquery.js"></script>
-  <script src="traduccion/traduccion_jquery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <script src="formulario.js"></script>
 </body>
 
 </html>
