@@ -103,7 +103,7 @@ function traer() {
             console.log(data.results['0'])
             contenido.innerHTML = `
                 <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle"> 
-                <p>Nombre: ${data.results['0'].name.last}</p>
+                <p>${data.results['0'].name.last}</p>
                 `
         })
 }
@@ -118,7 +118,7 @@ function traer2() {
             console.log(data.results['0'])
             contenido2.innerHTML = `
                 <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle"> 
-                <p>Nombre: ${data.results['0'].name.last}</p>
+                <p>${data.results['0'].name.last}</p>
                 `
         })
 }
@@ -134,7 +134,7 @@ function traer3() {
             console.log(data.results['0'])
             contenido3.innerHTML = `
                 <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle"> 
-                <p>Nombre: ${data.results['0'].name.last}</p>
+                <p>${data.results['0'].name.last}</p>
                 `
         })
 }
