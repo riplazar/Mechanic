@@ -1,70 +1,58 @@
-$(document).ready(function () {
-
-    $("#formulario_contacto").validate({
-
+$(document).ready(function() {
+    $("#formularioContacto").validate({
         rules: {
             nombre: {
                 required: true,
-                minlenght: 3,
-                maxlenght: 20
+                minlength: 3
             },
             apellido: {
                 required: true,
-                minlenght: 3,
-                maxlenght: 20
+                minlength: 3
             },
-            celular: {
+            correo: {
+                required: true,
+                email: true
+            },
+            telefono: {
                 required: true,
                 number: true,
-                minlenght: 8,
-                maxlenght: 9
-            },
-            email: {
-                email: true,
-                required: true,
+                minlength: 9,
+                maxlength: 9
             },
             mensaje: {
                 required: true,
-                minlenght: 10,
-                maxlenght: 200
-            },
+                minlength: 10,
+                maxlength: 150
+            }
+
         },
-
         messages: {
-
             nombre: {
-                required: "Ingresa tu nombre",
-                minlength: "Mínimo 3 caracteres",
-                maxlength: "Maximo 20 caracteres"
+                required: "Debe ingresar su nombre",
+                minlength: "El nombre debe tener mínimo 3 carácteres"
             },
             apellido: {
-                required: "Ingresa tu apellido",
-                minlength: "Mínimo 3 caracteres",
-                maxlength: "Maximo 20 caracteres"
+                required: "Debe ingresar su apellido",
+                minlength: "El apellido debe tener mínimo 3 carácteres"
             },
-
-            celular: {
-                required: "Ingresa tu número",
-                minlength: "Ingresa 9 digitos",
-                maxlength: "Ingresa 9 digitos",
-                number: "Ingresa un numero valido"
-
+            correo: {
+                required: "Debe ingresar su correo electrónico",
+                email: "El email debe tener un formato válido"
             },
-
-            email: {
-                required: "Ingresa tu email",
-                email: "Ingresa un mail valido"
+            telefono: {
+                required: "Debe ingresar su teléfono",
+                number: "Debe ingresar sólo números",
+                minlength: "El teléfono debe tener 9 dígitos",
+                maxlength: "El teléfono debe tener 9 dígitos"
             },
-
             mensaje: {
-                required: "Ingresa tu comentario",
-                minlength: "Mínimo 10 caracteres",
-                maxlenght: "Maximo 200 carateres"
-
+                required: "Debe ingresar un mensaje",
+                minlength: "El mensaje debe tener mínimo 10 carácteres",
+                maxlength: "El mensaje no debe tener mas de 150 carácteres"
             }
         }
 
-    })
+    });
 
 });
 

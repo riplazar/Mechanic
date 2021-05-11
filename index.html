@@ -210,44 +210,53 @@
       <div class="contact-form">
         <h3>¡Contáctanos!</h3>
 
-        <form action="#" id="formulario_contacto">
-          <p>
+        <form id="formularioContacto" action="mail.php" method="GET">
+          <div>
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" />
-          </p>
-          <p>
+            <input id="nombre" name="nombre"
+              placeholder="Nombre">
+          </div>
+          <div>
             <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" />
-          </p>
-          <p>
-            <label for="celular">Celular</label>
-            <input type="text" name="celular" id="celular" />
-          </p>
-          <p>
-            <label for="email">Correo</label>
-            <input type="email" name="email" id="email" />
-          </p>
-          <p class="block">
+            <input id="apellido" name="apellido"
+              placeholder="Apellido">
+          </div>
+          <div class="">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo"
+              placeholder="ejemplo@mail.com">
+          </div>
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono"
+              name="telefono" placeholder="912345678">
+          </div>
+          <div class="block">
             <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="3"></textarea>
-          </p>
-          <p class="block">
-            <button type="button" id="btn_enviar">Enviar</button>
-          </p>
+            <textarea  id="mensaje" name="mensaje"
+              rows="3" placeholder="Escriba aquí su mensaje"></textarea>
+          </div>
+          <!-- botones enviar y limpiar -->
+          <div class="block">
+            <button type="submit">Enviar</button>
+          </div>
         </form>
       </div>
-      <div class="contact-info">
-        <h4>Más información</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> 5 Norte Viña Del Mar</li>
-          <li><i class="fas fa-phone"></i> (032)404608</li>
-          <li>
-            <i class="fas fa-envelope-open-text"></i> Rayo.Makween@gmail.com
-          </li>
-        </ul>
-        <p></p>
-        <p>https://Rayo.Makween.com</p>
-      </div>
+        
+
+
+        <div class="contact-info">
+          <h4>Más información</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 5 Norte Viña Del Mar</li>
+            <li><i class="fas fa-phone"></i> (032)404608</li>
+            <li>
+              <i class="fas fa-envelope-open-text"></i> Rayo.Makween@gmail.com
+            </li>
+          </ul>
+          <p></p>
+          <p>https://Rayo.Makween.com</p>
+        </div>
     </div>
   </div>
 
