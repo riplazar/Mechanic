@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-    -webkit-text-stroke: 1px black;
+    /*-webkit-text-stroke: 1px black;*/
 }
 
 .center {
@@ -281,7 +281,7 @@ input[type=text], input[type=password] {
     font-size: 100%;
     margin: 16px 0;
     font-weight: 400;
-    -webkit-text-stroke: 0;
+    /*-webkit-text-stroke: 0;*/
 }
 
 .cards section.card span {
@@ -289,6 +289,7 @@ input[type=text], input[type=password] {
     max-width: 240px;
     font-size: 80%;
     margin-bottom: 16px;
+    margin-top: 30px;
 }
 
 .cards section.card button {
