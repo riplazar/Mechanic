@@ -46,9 +46,9 @@ h2 {
     font-weight: 300;
 }
 
-h3 {
-    /*-webkit-text-stroke: 1px black;*/
-}
+/*h3 {
+    -webkit-text-stroke: 1px black;
+}*/
 
 .center {
     max-width: 1100px;
